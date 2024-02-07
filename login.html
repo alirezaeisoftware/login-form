@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="describe your website">
+   <meta name="keywords" content="write keywords here">
+   <meta name="author" content="name of author">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="./Images/Screenshot_2022-07-16-08-39-01-239_com.whatsapp-removebg-preview (1) (1) (1).png" sizes="16x16">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>login form</title>
+</head>
+
+<body style="height: 100vh;">
+   <div class="h-100 register-bg container-fluid">
+      <div class="h-100 row">
+         <div data-aos="fade-left" class="p-0 register-form-parent col-lg-7">
+            <div class="register-form">
+               <div class="pb-4 register-form-container">
+                  <div class="d-flex flex-column">
+                     <div class="register-logo">
+                        <img src="./Images/Screenshot_2022-07-16-08-39-01-239_com.whatsapp-removebg-preview (1) (1) (1).png" width="100%" alt="logo">
+                     </div>
+                     <div class="tab-list-parent">
+                        <ul class="tab-list-container border-0 nav nav-tabs" role="tablist">
+                           <li class="d-flex align-items-center justify-content-center nav-item">
+                              <a class="register-input-btn border-0 nav-link active" data-bs-toggle="tab"
+                                 href="#registerWithMobile">
+                                 ورود با شماره موبایل</a>
+                           </li>
+                           <li class="d-flex align-items-center justify-content-center nav-item">
+                              <a class="register-input-btn border-0 nav-link" data-bs-toggle="tab"
+                                 href="#registerWithEmail"> ورود با ایمیل </a>
+                           </li>
+                           
+                        </ul>
+                     </div>
+                     <div class="tab-content">
+                        <div id="registerWithMobile" class="container tab-pane active"><br>
+                           <form>
+                              <div class="mb-3">
+                                 <input type="number" placeholder="شماره موبایل خود را وارد کنید" id="reg-number-mobile-login"
+                                    class="pe-3 login-input form-control">
+                                 <span class="error" id="reg-num-mo-result-login"></span>
+                              </div>
+                              <div class="mb-3">
+                                 <div class="d-flex align-items-center">
+                                    <input type="password" placeholder="کلمه عبور" id="reg-password-mobile-login"
+                                       class=" input-password-border-radius pe-3 login-input form-control">
+                                    <div id="togglePassword-2" class="input-password-login-eye"></div>
+                                 </div>
+                                 <span class="error" id="reg-pass-mo-result-login"></span>
+                              </div>
+                              <div class="d-flex justify-content-between flex-row">
+                                 <span class="login-txt"><a href="#" class="login-txt">فراموشی رمز عبور
+                                       ؟</a></span>
+                                 <div class="mb-3 d-flex justify-content-end align-items-center">
+                                    <input type="checkbox" class="ms-2 register-form-check mt-0 form-check-input"
+                                       id="exampleCheck1">
+                                    <label class="register-form-check-label form-check-label" for="exampleCheck1">
+                                       مرا به خاطر بسپار
+                                    </label>
+                                 </div>
+                              </div>
+                              <button id="login-mobile-submit" type="submit"
+                                 class="d-flex align-items-center justify-content-center mt-1 mb-3 register-submit">
+                                 <span class="btn-login-page-span"> ورود به سایت </span>
+                              </button>
+                              <span class="mb-3 login-txt"> حساب کاربری ندارید ؟<a class="login-txt"
+                                 href="#"> ایجاد حساب جدید </a></span>
+                           </form>
+                        </div>
+                        <div id="registerWithEmail" class="container tab-pane"><br>
+                           <form>
+                              <div class="mb-3">
+                                 <input type="email" placeholder="آدرس ایمیل خود را وارد کنید" id="reg-mail-login"
+                                    class="pe-3 login-input form-control">
+                                 <span class="error" id="reg-email-result-login"></span>
+                              </div>
+                              <div class="mb-3">
+                                 <div class="d-flex align-items-center">
+                                    <input type="password" placeholder="کلمه عبور" id="reg-password-email-login"
+                                       class="input-password-border-radius pe-3 login-input form-control">
+
+                                    <div id="togglePassword" class="input-password-login-eye"></div>
+                                 </div>
+                                 <span class="error" id="reg-pass-em-result-login"></span>
+                              </div>
+                              <div class="d-flex justify-content-between flex-row">
+                                 <span class="login-txt"><a href="#" class="login-txt">فراموشی رمز عبور
+                                       ؟</a></span>
+                                 <div class="mb-3 d-flex justify-content-end align-items-center">
+                                    <input type="checkbox" class="ms-2 register-form-check mt-0 form-check-input"
+                                       id="exampleCheck1">
+                                    <label class="register-form-check-label form-check-label" for="exampleCheck1">
+                                       مرا به خاطر بسپار
+                                    </label>
+                                 </div>
+                              </div>
+                              <button id="login-email-submit" type="submit"
+                                 class="d-flex align-items-center justify-content-center mt-1 mb-3 register-submit">
+                                 <span class="btn-login-page-span"> ورود به سایت </span>
+                              </button>
+                              <span class="mb-3 login-txt"> حساب کاربری ندارید ؟<a class="login-txt"
+                                 href="#"> ایجاد حساب جدید </a></span>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         <div data-aos="fade-right" class="login-img-container p-0 col-lg-5">
+            <div>
+               <img src="./Images/Tablet login-pana.svg" width="100%" height="100%" alt="phone">
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+      once: true
+   </script>
+   <script src="./css/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="./js/jquery/jquery-3.6.0.min.js"></script>
+   <script src="./js/script.js"></script>
+
+</body>
+
+</html>
